@@ -13,6 +13,7 @@ project = 'Zigbee R22 add-on for nRF Connect SDK'
 copyright = '2025, Nordic Semiconductor'
 author = 'Nordic Semiconductor'
 release = '1.0.0'
+version = '1.0.0'
 
 # Paths
 
@@ -37,6 +38,13 @@ exclude_patterns = ['_build_sphinx', 'Thumbs.db', '.DS_Store']
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
 html_theme = 'sphinx_ncs_theme'
+
+html_theme_options = {
+    'docsets': {},
+}
+
+html_show_sphinx = False
+html_extra_path = ['versions.json']
 
 ## -- Options for Breathe ----------------------------------------------------
 # https://breathe.readthedocs.io/en/latest/index.html
